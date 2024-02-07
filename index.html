@@ -3,71 +3,46 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Landing Page</title>
+    <title>LandingPage</title>
     <link rel="stylesheet" href="style.css">
+    <!-- icon font -->
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> -->
+    <!-- poppin font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,300&display=swap" rel="stylesheet">
+    <!-- font cursive -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kalam:wght@700&family=Montserrat:ital,wght@1,300&display=swap" rel="stylesheet">
 </head>
 <body>
     <nav>
         <div class="logo">
-            <img src="../images/logo4.jpeg" width="70" height="60">
+         <h1>LandingPage</h1>
         </div>
-
-        <ul>
+        <ul class="navbar">
             <li><a href="#">Home</a></li>
-            <li><a href="#">Services</a></li>
             <li><a href="#">About</a></li>
-            <li><a href="#">Blog</a></li>
+            <li><a href="#">Service</a></li>
+            <li><a href="#">Portfolio</a></li>
             <li><a href="#">Contact</a></li>
+           
         </ul>
     </nav>
-    <div class="slider-box">
-        <div id="slider">
-            <img src="../images/bgc2.jpg" alt="">
-            <img src="../images/bgc3.jpg" alt="">
-            <img src="../images/bgc4.jpg" alt="">
-            <img src="../images/bgc2.jpg" alt="">
+    <section class="page">
+        <div class="page-content">
+            <h3>Helllo, it's My</h3>
+            <h1>Landing Page</h1>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nequeitaque<br>libero consequuntur delectus sint minus quas consequuntur delectus<br>sint minus.</p>
         </div>
-        <div class="indicators">
-            <span id="btn1" class="active"></span>
-            <span id="btn2"></span>
-            <span id="btn3"></span>
-            <span id="btn4"></span>
-        </div>
-    </div>
-    <script>
-        var slide = document.getElementById("slider");
-        var btn1 = document.getElementById("btn1");
-        var btn2 = document.getElementById("btn2");
-        var btn3 = document.getElementById("btn3");
-        var btn4 = document.getElementById("btn4");
-        btn1.onclick = function(){
-            slide.style.transform = "translateX(0px)";
-            btn1.classList.add("active");
-            btn2.classList.remove("active");
-            btn3.classList.remove("active");
-            btn4.classList.remove("active");
-        }
-        btn2.onclick = function(){
-            slide.style.transform = "translateX(-100%)";
-            btn2.classList.add("active");
-            btn1.classList.remove("active");
-            btn3.classList.remove("active");
-            btn4.classList.remove("active");
-        }
-        btn3.onclick = function(){
-            slide.style.transform = "translateX(-200%)";
-            btn3.classList.add("active");
-            btn1.classList.remove("active");
-            btn2.classList.remove("active");
-            btn4.classList.remove("active");
-        }
-        btn4.onclick = function(){
-            slide.style.transform = "translateX(-300%)";
-            btn4.classList.add("active");
-            btn1.classList.remove("active");
-            btn2.classList.remove("active");
-            btn3.classList.remove("active");
-        }
-    </script>
+       
+    </section>
+    <section class="butt">
+    <a href="#" class="btn-box">Sign In</a>
+    <a href="#" class="btn-box">Login</a> 
+        
+    </section>
+    
 </body>
 </html>
